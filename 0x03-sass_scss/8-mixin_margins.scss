@@ -1,0 +1,14 @@
+/* Scss File*/
+@mixin margin ($prop) {
+    margin-left: $prop;
+    margin-right: $prop;
+}
+
+body {
+    @include margin(10px);
+}
+
+div {
+    @include margin(15px);
+}
+    
