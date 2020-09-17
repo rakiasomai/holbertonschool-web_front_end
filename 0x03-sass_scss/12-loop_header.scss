@@ -1,0 +1,12 @@
+/* Scss File */
+
+$myTag: h;
+
+@for $i from 1 through 5
+{
+    #{$myTag}#{$i} 
+    {
+    font-size: 0px + $i;
+}
+}
+    
