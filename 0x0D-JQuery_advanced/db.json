@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "title": "",
+      "author": "",
+      "id": 6
+    },
+    {
+      "title": "",
+      "author": "RRR",
+      "id": 9
+    },
+    {
+      "title": "Rakia",
+      "author": "",
+      "id": 10
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
