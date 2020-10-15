@@ -1,0 +1,250 @@
+html
+  line-height: 1.15
+  -webkit-text-size-adjust: 100%
+body
+  margin: 0
+main
+  display: block
+h1
+  font-size: 2em
+  margin: .67em 0
+hr
+  box-sizing: content-box
+  height: 0
+  overflow: visible
+pre
+  font-family: monospace,monospace
+  font-size: 1em
+a
+  background-color: transparent
+abbr[title]
+  border-bottom: none
+  text-decoration: underline
+  text-decoration: underline dotted
+b, strong
+  font-weight: bolder
+code, kbd, samp
+  font-family: monospace,monospace
+  font-size: 1em
+small
+  font-size: 80%
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+sub
+  bottom: -.25em
+sup
+  top: -.5em
+img
+  border-style: none
+button, input, optgroup, select, textarea
+  font-family: inherit
+  font-size: 100%
+  line-height: 1.15
+  margin: 0
+button, input
+  overflow: visible
+button, select
+  text-transform: none
+[type=button], [type=reset], [type=submit], button
+  -webkit-appearance: button
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner
+  border-style: none
+  padding: 0
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring
+  outline: 1px dotted ButtonText
+fieldset
+  padding: .35em .75em .625em
+legend
+  box-sizing: border-box
+  color: inherit
+  display: table
+  max-width: 100%
+  padding: 0
+  white-space: normal
+progress
+  vertical-align: baseline
+textarea
+  overflow: auto
+[type=checkbox], [type=radio]
+  box-sizing: border-box
+  padding: 0
+[type=number]
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    height: auto
+[type=search]
+  -webkit-appearance: textfield
+  outline-offset: -2px
+  &::-webkit-search-decoration
+    -webkit-appearance: none
+\::-webkit-file-upload-button
+  -webkit-appearance: button
+  font: inherit
+details
+  display: block
+summary
+  display: list-item
+template, [hidden]
+  display: none
+
+\:root
+  --text-color:white
+  --pink-color:#FF6565
+  --family-font:'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  --grey-blue:#061528
+  --light-grey:#DCDCDC
+
+  box-sizing: border-box
+  font-family: var(--family-font)
+  &::before, &::after
+    box-sizing: border-box
+    font-family: var(--family-font)
+button
+  &:active, &:hover
+    opacity: 0.9
+  &:focus
+    outline: none
+header
+  background-image: url(images/headphones_hero_1.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color: var(--grey-blue)
+  max-width: 100%
+  height: 800px
+.container
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  height: 37px
+  top: 30px
+div.header-logo
+  position: relative
+ul.nav-list
+  list-style-type: none
+  display: flex
+  flex-direction: row
+  margin: 0
+li.nav-item a
+  text-decoration: none
+  margin: 15px
+  color: var(--text-color)
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  &:active, &:hover
+    color: var(--pink-color)
+.header-main
+  color: var(--text-color)
+  text-align: center
+  width: 700px
+  height: auto
+  margin: auto
+  margin-top: 340px
+.above-button
+  h1
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    margin-bottom: 0
+  h4
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    margin-top: 0
+.button button, button
+  background-color: var(--pink-color)
+  color: white
+  font-weight: bold
+  font-size: 14px
+  line-height: 18px
+  text-align: center
+  border: 0px solid transparent
+  width: 162px
+  height: 44px
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5))
+  border-radius: 50px
+  margin-top: 30px
+  margin-bottom: 35px
+.after-button
+  font-size: 16px
+  line-height: 26px
+label.menu-button
+  position: relative
+  display: none
+  width: 25px
+  height: 20px
+  left: -165px
+  top: 25px
+input.menu-button
+  display: none
+.menu-button-line
+  height: 3px
+  width: 100%
+  background-color: white
+  margin: 0
+.menu-button-line-1
+  margin-bottom: 5px
+.menu-button-line-2
+  margin-bottom: 5px
+  width: 70%
+.menu-button-line-3
+  margin-bottom: 0
+input[class="menu-button"]:checked ~ label.menu-button
+  .menu-button-line-1
+    transform: rotate(40deg)
+    transform-origin: left
+    transition: transform 0.2s ease-in-out
+  .menu-button-line-2
+    visibility: hidden
+  .menu-button-line-3
+    transform: rotate(-40deg)
+    transform-origin: left
+    transition: transform 0.2s ease-in-out
+div.what-we-do-text
+  text-align: center
+  width: 700px
+  max-width: 90%
+  margin: auto
+  margin-top: 110px
+.what-we-do-text
+  h1
+    margin-bottom: 50px
+  p
+    font-size: 16px
+    line-height: 26px
+.what-we-do-icons
+  max-width: 90%
+  margin: auto
+  margin-top: 110px
+  margin-bottom: 110px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+.what-we-do-cards
+  width: 207px
+  height: 100%
+  text-align: center
+  margin: auto
+.icon
+  font-size: 90px
+  color: var(--pink-color)
+  animation: heartbeat 1s infinite
+@keyframes heartbeat
+  0%
+    transform: scale(1, 1)
+  25%
+    transform: scale(1.2, 1.2)
+  50%
+    transform: scale(1, 1)
+  75%
+    transform: scale(1.2, 1.2)
+  100%
+    transform: scale(1, 1)
